@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "645935911327",
+    "firebase_url": "https://bus-sys.firebaseio.com",
+    "project_id": "bus-sys",
+    "storage_bucket": "bus-sys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645935911327:android:7ad2aa7ad78f7ca4192daa",
+        "android_client_info": {
+          "package_name": "com.example.chirag.navigationdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645935911327-lgap89ovpb0qgqaj75bdlrc3qc969a5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDof71Biuzo5ry_6jA4b5vnLldsZQPtz80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645935911327-lgap89ovpb0qgqaj75bdlrc3qc969a5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

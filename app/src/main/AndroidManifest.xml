@@ -2,19 +2,50 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.chirag.navigationdrawer">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Bus Navigation System"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".User"></activity>
+        <activity android:name=".SignUpBus" />
+        <activity android:name=".SignUpUser" />
+        <activity android:name=".ChooseActivity" />
+        <activity
+            android:name=".BusListActivity"
+            android:label="@string/title_bus_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BusDetailActivity"
+            android:label="@string/title_bus_detail"
+            android:parentActivityName=".BusListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.chirag.navigationdrawer.BusListActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".driverProfile" />
+        <activity android:name=".userProfile" />
+        <activity android:name=".MainActivityy" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/HiddenTitleTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>
